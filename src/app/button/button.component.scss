@@ -1,0 +1,14 @@
+:root{
+    --bg-success: #54af54a2;
+    --bg-info: #ffff59ef;
+    --bg-danger: #e94c4cec;
+}
+:host(.test){
+    background-color: var(--bg-success);
+}
+:host(.info){
+    background-color: var(--bg-info);
+}
+:host(.danger){
+    background-color: var(--bg-danger);
+}

@@ -5,3 +5,5 @@ $light: #EEF0F2;
 $danger: #E65F5C;
 
 @import '/node_modules/bootstrap/scss/bootstrap.scss';
+@import "./app/lib/mixins";
+@import "./app/lib/placeholders";
