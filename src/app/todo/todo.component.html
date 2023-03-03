@@ -1,0 +1,26 @@
+<div class="container bg-dark p-2 text-light mt-2 rounded w-50">
+  <form action="" class="text-center">
+    <div class="m-3">
+      <label for="exampleInputEmail1" class="form-label h2">Votre Tache</label>
+      <!-- #newItem variable de refence qui reference notre input(avec tous ses methodes)-->
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        value="{{input_value}}"
+        #newItem
+        requiredks
+        />
+    </div>
+    <!-- lors du click sur le button on appel la methode addItem en lui donnant la valeur du value actuel -->
+    <button
+      class="btn btn-primary px-4 fw-bold text-light"
+      (click)="addItem(newItem.value,$event)"
+      >
+      Ajouter
+    </button>
+  </form>
+  <app-todo-item [items]="currentItems" (editItem)="inputValue($event)"></app-todo-item>
+  
+</div>
