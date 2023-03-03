@@ -6,7 +6,17 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./hero-child.component.scss'],
 })
 export class HeroChildComponent {
-  @Input() heroChild:{name:string}| null = null ;
+  //vue que notre propriete est prive on decore notre getter
+  @Input()
+  get heroName(): string {
+    //on recupere la valeur traite dans notre setter
+    return this._heroName;
+  }
+  set heroName(name: string) {
+    //on fait les operations sur la valeur qu'on recoit
+    this._heroName = (name && name.trim()) || '< My hide name >';
+  }
+  private _heroName: string = ""
 
-  @Input("alias") master:string = "";
+  @Input('alias') master: string = '';
 }
