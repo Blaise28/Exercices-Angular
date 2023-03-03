@@ -1,0 +1,5 @@
+<div class="container text-center">
+    <h1 class="uppercase">{{master}} control {{heroes.length}} heroes</h1>
+<!-- heroChild on lui donne la valeur du parent -->
+<app-hero-child *ngFor="let hero of heroes" [heroChild]="hero" [alias]="master"></app-hero-child>
+</div>
