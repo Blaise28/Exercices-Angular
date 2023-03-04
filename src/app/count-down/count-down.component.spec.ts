@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VersionChildComponent } from './version-child.component';
+import { CountDownComponent } from './count-down.component';
 
-describe('VersionChildComponent', () => {
-  let component: VersionChildComponent;
-  let fixture: ComponentFixture<VersionChildComponent>;
+describe('CountDownComponent', () => {
+  let component: CountDownComponent;
+  let fixture: ComponentFixture<CountDownComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ VersionChildComponent ]
+      declarations: [ CountDownComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(VersionChildComponent);
+    fixture = TestBed.createComponent(CountDownComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

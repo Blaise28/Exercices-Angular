@@ -1,0 +1,26 @@
+<div class="container w-50 text-center">
+  <h1>compte a rebours</h1>
+  <div
+    class="cont_btn d-flex justify-content-evenly align-items-center w-25 m-auto"
+  >
+    <button
+      class="btn btn-primary fw-bold"
+      [disabled]="timer.disbled"
+      (click)="timer.countDown()"
+    >
+      Start
+    </button>
+    <button
+      class="btn btn-danger fw-bold"
+      (click)="timer.stop()"
+      [disabled]="timer.disbled"
+    >
+      Stop
+    </button>
+  </div>
+  <div class="card w-25 m-auto mt-4">
+    <div class="card-header fw-bold fs-5">Seconds</div>
+    <div class="card-body fw-bold fs-5">{{ timer.seconds }}</div>
+  </div>
+  <app-timer #timer></app-timer>
+</div>
