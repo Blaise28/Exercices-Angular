@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HeroChildComponent } from './hero-child.component';
+import { VersionParentComponent } from './version-parent.component';
 
-describe('HeroChildComponent', () => {
-  let component: HeroChildComponent;
-  let fixture: ComponentFixture<HeroChildComponent>;
+describe('VersionParentComponent', () => {
+  let component: VersionParentComponent;
+  let fixture: ComponentFixture<VersionParentComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HeroChildComponent ]
+      declarations: [ VersionParentComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(HeroChildComponent);
+    fixture = TestBed.createComponent(VersionParentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

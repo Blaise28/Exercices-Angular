@@ -1,5 +1,0 @@
-<div class="container text-center">
-    <h1 class="uppercase">{{master}} control {{heroes.length}} heroes</h1>
-<!-- [heroName] sera notre setter qu'on envoi le nom du hero-->
-<app-hero-child *ngFor="let hero of heroes" [heroName]="hero.name" [alias]="master"></app-hero-child>
-</div>
