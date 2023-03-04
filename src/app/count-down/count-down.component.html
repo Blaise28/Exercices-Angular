@@ -5,22 +5,22 @@
   >
     <button
       class="btn btn-primary fw-bold"
-      [disabled]="timer.disbled"
-      (click)="timer.countDown()"
+      [disabled]="disabled()"
+      (click)="start()"
     >
       Start
     </button>
     <button
       class="btn btn-danger fw-bold"
-      (click)="timer.stop()"
-      [disabled]="timer.disbled"
+      (click)="stop()"
+      [disabled]="disabled()"
     >
       Stop
     </button>
   </div>
   <div class="card w-25 m-auto mt-4">
     <div class="card-header fw-bold fs-5">Seconds</div>
-    <div class="card-body fw-bold fs-5">{{ timer.seconds }}</div>
+    <div class="card-body fw-bold fs-5">{{ seconds() }}</div>
   </div>
-  <app-timer #timer></app-timer>
+  <app-timer></app-timer>
 </div>
