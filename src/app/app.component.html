@@ -12,4 +12,36 @@
     </form>
   </div>
 </nav>
-<app-count-down></app-count-down>
+
+<div class="container">
+  <!-- projection de contenu basic -->
+  <app-zippy-basic>
+    <p class="mx-3">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
+      dignissimos blanditiis hic? Vitae dolorum voluptatibus aut, tenetur nobis
+      necessitatibus natus magni eius voluptatum unde. Non tempora perferendis
+      repellat ratione consectetur!
+    </p>
+    <div class="btn btn-primary fw-bold text-light">J'aime</div>
+  </app-zippy-basic>
+
+  <!-- projection de contenu multislot -->
+  <app-zippy-multislot>
+    <p Description>
+      un selecteur qui determine quel contenu va dans cet emplacement
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, non!
+    </p>
+    <div Question>Project content is cool ?</div>
+  </app-zippy-multislot>
+
+  <!-- projection de contenu conditionnelle -->
+  <app-zippy-condition>
+    <ng-template appZippyContent>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, nihil
+      nobis ullam nesciunt consequatur dolorum molestias cumque libero ipsam
+      vitae?
+    </ng-template>
+  </app-zippy-condition>
+</div>

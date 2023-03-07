@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TimerComponent } from './timer.component';
+import { ZippyBasicComponent } from './zippy-basic.component';
 
-describe('TimerComponent', () => {
-  let component: TimerComponent;
-  let fixture: ComponentFixture<TimerComponent>;
+describe('ZippyBasicComponent', () => {
+  let component: ZippyBasicComponent;
+  let fixture: ComponentFixture<ZippyBasicComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TimerComponent ]
+      declarations: [ ZippyBasicComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TimerComponent);
+    fixture = TestBed.createComponent(ZippyBasicComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

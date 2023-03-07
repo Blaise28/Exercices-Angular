@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CountDownComponent } from './count-down.component';
+import { ZippyMultislotComponent } from './zippy-multislot.component';
 
-describe('CountDownComponent', () => {
-  let component: CountDownComponent;
-  let fixture: ComponentFixture<CountDownComponent>;
+describe('ZippyMultislotComponent', () => {
+  let component: ZippyMultislotComponent;
+  let fixture: ComponentFixture<ZippyMultislotComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CountDownComponent ]
+      declarations: [ ZippyMultislotComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CountDownComponent);
+    fixture = TestBed.createComponent(ZippyMultislotComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

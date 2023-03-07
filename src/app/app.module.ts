@@ -2,13 +2,17 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { CountDownComponent } from './count-down/count-down.component';
-import { TimerComponent } from './count-down/timer/timer.component';
+import { ZippyBasicComponent } from './zippy-basic/zippy-basic.component';
+import { ZippyMultislotComponent } from './zippy-multislot/zippy-multislot.component';
+import { ZippyConditionComponent } from './zippy-condition/zippy-condition.component';
+import { ZippyContentDirective } from './zippy-content.directive';
 @NgModule({
   declarations: [
     AppComponent,
-    CountDownComponent,
-    TimerComponent,
+    ZippyBasicComponent,
+    ZippyMultislotComponent,
+    ZippyConditionComponent,
+    ZippyContentDirective,
   ],
   imports: [
     BrowserModule

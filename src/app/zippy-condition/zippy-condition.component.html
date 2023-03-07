@@ -1,0 +1,17 @@
+<section class="fs-5 bg-secondary p-2 text-center rounded mb-3 w-75 m-auto">
+  <h1>Projection conditionnelle</h1>
+
+  <main
+    *ngIf="expanded && name === 'nightbird'"
+    [id]="contentId"
+  >
+    <ng-container [ngTemplateOutlet]="content.templateRef"></ng-container>
+  </main>
+
+  <div
+    class="alert alert-info"
+    *ngIf="expanded === false || name !== 'nightbird'"
+  >
+    Pas de template projecte ou il ne remplie pas les conditions
+  </div>
+</section>
